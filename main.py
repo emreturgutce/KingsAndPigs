@@ -430,7 +430,6 @@ class Game:
                         hit.dying = True
                         self.king_yes.play()
                         
-
     def pigCreate(self):
         self.pig = Pig()
         self.pigs.add(self.pig)
@@ -669,7 +668,7 @@ class Game:
         # pg.draw.rect(self.screen, (255, 0, 0), self.king.rect, 1)
         # *after* drawing everything, flip the display
         #pg.draw.rect(self.screen, (255,0,0), self.king.rect, 1)
-        self.showLevel2()
+        # self.showLevel2()
         pg.display.flip()
 
     def createDiamond(self, pos):
@@ -725,7 +724,6 @@ class Game:
                 if event.type == pg.KEYUP:
                     self.showstartscreen = False
                 
-
     def show_go_screen(self):
         # game over/continue
         if not self.running:
